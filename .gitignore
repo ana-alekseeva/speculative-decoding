@@ -1,0 +1,24 @@
+# --- Virtual environments (do NOT submit, per homework instructions) ---
+speculators_venv/
+vllm_venv/
+comp_venv/
+*_venv/
+.venv/
+
+# --- Cloned editable dependency ---
+speculators/
+
+# --- Model / training artifacts (large) ---
+output/
+checkpoints/
+Qwen3-8B-FP8-Dynamic/
+*-FP8-Dynamic/
+hidden_states/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# --- macOS ---
+.DS_Store
