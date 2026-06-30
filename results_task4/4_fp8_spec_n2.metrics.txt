@@ -1,0 +1,26 @@
+# HELP vllm:spec_decode_num_drafts_total Number of spec decoding drafts.
+# TYPE vllm:spec_decode_num_drafts_total counter
+vllm:spec_decode_num_drafts_total{engine="0",model_name="/home/new-mac/speculative-decoding/Qwen3-8B-FP8-Dynamic"} 14199.0
+# HELP vllm:spec_decode_num_drafts_created Number of spec decoding drafts.
+# TYPE vllm:spec_decode_num_drafts_created gauge
+vllm:spec_decode_num_drafts_created{engine="0",model_name="/home/new-mac/speculative-decoding/Qwen3-8B-FP8-Dynamic"} 1.7828451264082325e+09
+# HELP vllm:spec_decode_num_draft_tokens_total Number of draft tokens.
+# TYPE vllm:spec_decode_num_draft_tokens_total counter
+vllm:spec_decode_num_draft_tokens_total{engine="0",model_name="/home/new-mac/speculative-decoding/Qwen3-8B-FP8-Dynamic"} 28398.0
+# HELP vllm:spec_decode_num_draft_tokens_created Number of draft tokens.
+# TYPE vllm:spec_decode_num_draft_tokens_created gauge
+vllm:spec_decode_num_draft_tokens_created{engine="0",model_name="/home/new-mac/speculative-decoding/Qwen3-8B-FP8-Dynamic"} 1.7828451264082608e+09
+# HELP vllm:spec_decode_num_accepted_tokens_total Number of accepted tokens.
+# TYPE vllm:spec_decode_num_accepted_tokens_total counter
+vllm:spec_decode_num_accepted_tokens_total{engine="0",model_name="/home/new-mac/speculative-decoding/Qwen3-8B-FP8-Dynamic"} 6227.0
+# HELP vllm:spec_decode_num_accepted_tokens_created Number of accepted tokens.
+# TYPE vllm:spec_decode_num_accepted_tokens_created gauge
+vllm:spec_decode_num_accepted_tokens_created{engine="0",model_name="/home/new-mac/speculative-decoding/Qwen3-8B-FP8-Dynamic"} 1.7828451264082751e+09
+# HELP vllm:spec_decode_num_accepted_tokens_per_pos_total Accepted tokens per draft position.
+# TYPE vllm:spec_decode_num_accepted_tokens_per_pos_total counter
+vllm:spec_decode_num_accepted_tokens_per_pos_total{engine="0",model_name="/home/new-mac/speculative-decoding/Qwen3-8B-FP8-Dynamic",position="0"} 4989.0
+vllm:spec_decode_num_accepted_tokens_per_pos_total{engine="0",model_name="/home/new-mac/speculative-decoding/Qwen3-8B-FP8-Dynamic",position="1"} 1238.0
+# HELP vllm:spec_decode_num_accepted_tokens_per_pos_created Accepted tokens per draft position.
+# TYPE vllm:spec_decode_num_accepted_tokens_per_pos_created gauge
+vllm:spec_decode_num_accepted_tokens_per_pos_created{engine="0",model_name="/home/new-mac/speculative-decoding/Qwen3-8B-FP8-Dynamic",position="0"} 1.782845126408291e+09
+vllm:spec_decode_num_accepted_tokens_per_pos_created{engine="0",model_name="/home/new-mac/speculative-decoding/Qwen3-8B-FP8-Dynamic",position="1"} 1.782845126408296e+09

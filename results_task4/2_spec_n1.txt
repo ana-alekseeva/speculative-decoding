@@ -1,0 +1,47 @@
+INFO 06-30 18:38:40 [nixl_utils.py:20] Setting UCX_RCACHE_MAX_UNRELEASED to '1024' to avoid a rare memory leak in UCX when using NIXL.
+WARNING 06-30 18:38:40 [nixl_utils.py:34] NIXL is not available
+WARNING 06-30 18:38:40 [nixl_utils.py:44] NIXL agent config is not available
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Namespace(subparser='bench', bench_type='serve', dispatch_function=<function BenchmarkServingSubcommand.cmd at 0x7ec0ef80c720>, trust_remote_code=False, seed=42, num_prompts=80, dataset_name='hf', no_stream=False, dataset_path='philschmid/mt-bench', no_oversample=False, skip_chat_template=False, enable_multimodal_chat=False, disable_shuffle=False, custom_output_len=256, spec_bench_output_len=256, spec_bench_category=None, sonnet_input_len=550, sonnet_output_len=150, sonnet_prefix_len=200, sharegpt_output_len=None, blazedit_min_distance=0.0, blazedit_max_distance=1.0, asr_max_audio_len_sec=inf, asr_min_audio_len_sec=0.0, random_input_len=1024, random_output_len=128, random_range_ratio='0.0', random_prefix_len=0, random_batch_size=1, no_reranker=False, random_mm_base_items_per_request=1, random_mm_num_mm_items_range_ratio=0.0, random_mm_limit_mm_per_prompt={'image': 255, 'video': 1}, random_mm_bucket_config={(256, 256, 1): 0.5, (720, 1280, 1): 0.5, (720, 1280, 16): 0.0}, hf_subset=None, hf_split=None, hf_name=None, hf_output_len=None, prefix_repetition_prefix_len=256, prefix_repetition_suffix_len=256, prefix_repetition_num_prefixes=10, prefix_repetition_output_len=128, speed_bench_dataset_subset='qualitative', speed_bench_output_len=4096, speed_bench_category=None, label=None, backend='openai', base_url=None, host='127.0.0.1', port=8000, endpoint='/v1/completions', header=None, max_concurrency=8, model='Qwen/Qwen3-8B', input_len=None, output_len=None, tokenizer=None, tokenizer_mode='auto', use_beam_search=False, logprobs=None, request_rate=inf, burstiness=1.0, disable_tqdm=False, num_warmups=0, profile=False, save_result=False, save_detailed=False, append_result=False, metadata=None, result_dir=None, result_filename=None, ignore_eos=False, percentile_metrics=None, metric_percentiles='99', goodput=None, request_id_prefix='bench-2900f655-', top_p=None, top_k=None, min_p=None, temperature=None, frequency_penalty=None, presence_penalty=None, repetition_penalty=None, served_model_name=None, lora_modules=None, lora_assignment='random', ramp_up_strategy=None, ramp_up_start_rps=None, ramp_up_end_rps=None, ready_check_timeout_sec=0, extra_body=None, skip_tokenizer_init=False, insecure=False, plot_timeline=False, timeline_itl_thresholds='25,50', plot_dataset_stats=False)
+WARNING: vllm bench serve no longer sets temperature==0 (greedy) in requests by default. The default will be determined on the server side and can be model/API specific. For the old behavior, include --temperature=0.
+Starting initial single prompt test run...
+Skipping endpoint ready check.
+Starting main benchmark run...
+Traffic request rate: inf
+Burstiness factor: 1.0 (Poisson process)
+Maximum request concurrency: 8
+  0%|          | 0/80 [00:00<?, ?it/s]  1%|▏         | 1/80 [00:09<12:27,  9.46s/it]  5%|▌         | 4/80 [00:09<02:18,  1.82s/it] 10%|█         | 8/80 [00:09<00:52,  1.36it/s] 14%|█▍        | 11/80 [00:11<00:42,  1.62it/s] 19%|█▉        | 15/80 [00:11<00:24,  2.69it/s] 21%|██▏       | 17/80 [00:12<00:26,  2.38it/s] 24%|██▍       | 19/80 [00:12<00:20,  2.94it/s] 26%|██▋       | 21/80 [00:12<00:15,  3.78it/s] 29%|██▉       | 23/80 [00:12<00:12,  4.72it/s] 31%|███▏      | 25/80 [00:13<00:16,  3.29it/s] 34%|███▍      | 27/80 [00:14<00:12,  4.09it/s] 39%|███▉      | 31/80 [00:14<00:07,  6.19it/s] 41%|████▏     | 33/80 [00:15<00:12,  3.77it/s] 45%|████▌     | 36/80 [00:15<00:08,  5.33it/s] 49%|████▉     | 39/80 [00:15<00:05,  7.15it/s] 51%|█████▏    | 41/80 [00:16<00:09,  3.97it/s] 55%|█████▌    | 44/80 [00:17<00:06,  5.46it/s] 59%|█████▉    | 47/80 [00:17<00:04,  7.04it/s] 61%|██████▏   | 49/80 [00:18<00:07,  4.14it/s] 64%|██████▍   | 51/80 [00:18<00:05,  4.98it/s] 66%|██████▋   | 53/80 [00:18<00:04,  6.03it/s] 70%|███████   | 56/80 [00:18<00:03,  7.31it/s] 72%|███████▎  | 58/80 [00:20<00:05,  4.15it/s] 76%|███████▋  | 61/80 [00:20<00:03,  5.96it/s] 80%|████████  | 64/80 [00:20<00:02,  6.48it/s] 82%|████████▎ | 66/80 [00:21<00:03,  4.21it/s] 85%|████████▌ | 68/80 [00:21<00:02,  5.25it/s] 90%|█████████ | 72/80 [00:22<00:01,  6.47it/s] 92%|█████████▎| 74/80 [00:23<00:01,  4.09it/s] 98%|█████████▊| 78/80 [00:23<00:00,  6.22it/s]100%|██████████| 80/80 [00:24<00:00,  3.63it/s]100%|██████████| 80/80 [00:24<00:00,  3.25it/s]
+tip: install termplotlib and gnuplot to plot the metrics
+============ Serving Benchmark Result ============
+Successful requests:                     80        
+Failed requests:                         0         
+Maximum request concurrency:             8         
+Benchmark duration (s):                  24.62     
+Total input tokens:                      6078      
+Total generated tokens:                  20480     
+Request throughput (req/s):              3.25      
+Output token throughput (tok/s):         831.83    
+Peak output token throughput (tok/s):    1006.00   
+Peak concurrent requests:                16.00     
+Total token throughput (tok/s):          1078.70   
+---------------Time to First Token----------------
+Mean TTFT (ms):                          823.08    
+Median TTFT (ms):                        24.79     
+P99 TTFT (ms):                           8085.36   
+-----Time per Output Token (excl. 1st token)------
+Mean TPOT (ms):                          5.96      
+Median TPOT (ms):                        5.87      
+P99 TPOT (ms):                           9.38      
+---------------Inter-token Latency----------------
+Mean ITL (ms):                           8.13      
+Median ITL (ms):                         7.91      
+P99 ITL (ms):                            9.00      
+---------------Speculative Decoding---------------
+Acceptance rate (%):                     36.56     
+Acceptance length:                       1.37      
+Drafts:                                  14952     
+Draft tokens:                            14952     
+Accepted tokens:                         5467      
+Per-position acceptance (%):
+  Position 0:                            36.56     
+==================================================
