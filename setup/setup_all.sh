@@ -9,6 +9,9 @@
 # Run this ON THE GPU BOX (Linux + NVIDIA H100). On macOS the CUDA-only
 # packages (vllm, flash-attn, CUDA torch) have no wheels and will fail.
 #
+curl -LsSf https://astral.sh/uv/install.sh | sh
+export PATH="$HOME/.local/bin:$PATH"
+
 set -euo pipefail
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
