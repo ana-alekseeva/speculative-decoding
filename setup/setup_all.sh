@@ -12,6 +12,11 @@
 curl -LsSf https://astral.sh/uv/install.sh | sh
 export PATH="$HOME/.local/bin:$PATH"
 
+GIT_USER_NAME="Anastasiia Alekseeva"
+GIT_USER_EMAIL="alekseevaas21@gmail.com"
+git config --global user.name  >/dev/null 2>&1 || git config --global user.name  "${GIT_USER_NAME}"
+git config --global user.email >/dev/null 2>&1 || git config --global user.email "${GIT_USER_EMAIL}"
+
 set -euo pipefail
 
 HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
